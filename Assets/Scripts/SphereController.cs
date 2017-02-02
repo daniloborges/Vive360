@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SphereController : MonoBehaviour {
 
-	public GameObject camera;
+	public GameObject cameraToFollow;
 	private Vector3 follow;
 
 	// Use this for initialization
@@ -14,9 +14,11 @@ public class SphereController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void LateUpdate () {
-		follow = transform.position;
-		follow.x = camera.transform.position.x;
-		follow.z = camera.transform.position.z;
-		transform.position = follow;
+        if (cameraToFollow != null) {
+            follow = transform.position;
+            follow.x = cameraToFollow.transform.position.x/3;
+            follow.z = cameraToFollow.transform.position.z/3;
+            transform.position = follow;
+        }
 	}
 }

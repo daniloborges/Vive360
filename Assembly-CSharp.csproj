@@ -55,6 +55,8 @@
      <Compile Include="Assets\MediaDecoder\Scripts\PlayerScripts\StereoVideoSourceController.cs" />
      <Compile Include="Assets\MediaDecoder\Scripts\PlayerScripts\VideoSourceController.cs" />
      <Compile Include="Assets\MediaDecoder\Scripts\UVSphere.cs" />
+     <Compile Include="Assets\Scripts\ControllerMenuManager.cs" />
+     <Compile Include="Assets\Scripts\MenuManager.cs" />
      <Compile Include="Assets\Scripts\SphereController.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
